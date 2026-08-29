@@ -12,6 +12,6 @@ export class Gallery {
   readonly picPath = inject(NZ_MODAL_DATA);
 
   get imagePath() {
-    return `assets/adesewa/${this.picPath}`;
+    return `assets/olajumoke/${this.picPath}`;
   }
 }

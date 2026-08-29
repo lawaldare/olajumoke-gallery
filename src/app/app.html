@@ -2,19 +2,9 @@
   <app-thiings-grid [gridSize]="gridSize" [itemTemplate]="cellTemplate"> </app-thiings-grid>
 </div>
 
-<!-- <ng-template #cellTemplate let-item>
-  <div
-    class="cell"
-    [style.background-color]="colors[item.gridIndex % colors.length]"
-    (click)="onCellClick(item)"
-  >
-    {{ item.gridIndex }}
-  </div>
-</ng-template> -->
-
 <ng-template #cellTemplate let-item>
-  @let adesewaItem = adesewaPictures[item.gridIndex % adesewaPictures.length];
-  <div class="cell" (click)="onCellClick(item, adesewaItem)">
-    <img [src]="'assets/adesewa/' + adesewaItem" alt="" />
+  @let olajumokeItem = olajumokePictures[item.gridIndex % olajumokePictures.length];
+  <div class="cell" (click)="onCellClick(item, olajumokeItem)">
+    <img [src]="'assets/olajumoke/' + olajumokeItem" alt="" />
   </div>
 </ng-template>

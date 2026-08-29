@@ -1,4 +1,4 @@
-import { Component, inject, OnInit, signal } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { ThiingsGridComponent } from './thiingsGrid';
 import { FormsModule } from '@angular/forms';
 
@@ -15,12 +15,9 @@ import { Pane } from 'tweakpane';
   styleUrl: './app.scss',
 })
 export class App implements OnInit {
-  protected readonly title = signal('thiings.co');
   private readonly modal = inject(NzModalService);
-
-  public gridSize = 100;
-
-  public adesewaPictures = [
+  protected readonly gridSize = 100;
+  protected readonly olajumokePictures = [
     '1.jpg',
     '2.jpg',
     '3.jpg',
@@ -54,20 +51,6 @@ export class App implements OnInit {
     '31.jpg',
     '32.jpg',
     '33.jpg',
-    '34.jpg',
-    '35.jpg',
-    '36.jpg',
-    '37.jpg',
-    '38.jpg',
-    '39.jpg',
-    '40.jpg',
-    '41.jpg',
-    '42.jpg',
-    '43.jpg',
-    '44.jpg',
-    '45.jpg',
-    '46.jpg',
-    '47.jpg',
   ];
 
   ngOnInit(): void {
@@ -76,10 +59,8 @@ export class App implements OnInit {
   }
 
   public onCellClick(item: any, pic: any): void {
-    // console.log(item, pic);
-
     this.modal.create({
-      nzTitle: `Infinite Scroll Gallery`,
+      nzTitle: `Olajumoke Infinite Scroll Gallery`,
       nzContent: Gallery,
       nzClosable: false,
       nzCentered: true,
