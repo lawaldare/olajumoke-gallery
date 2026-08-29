@@ -60,7 +60,7 @@ export class App implements OnInit {
 
   public onCellClick(item: any, pic: any): void {
     this.modal.create({
-      nzTitle: `Olajumoke Infinite Scroll Gallery`,
+      nzTitle: `Olajumoke Gallery`,
       nzContent: Gallery,
       nzClosable: false,
       nzCentered: true,

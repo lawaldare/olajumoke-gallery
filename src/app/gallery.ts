@@ -5,7 +5,7 @@ import { NZ_MODAL_DATA } from 'ng-zorro-antd/modal';
 @Component({
   selector: 'app-root',
   imports: [CommonModule],
-  template: ` <img [src]="imagePath" alt="Olamide Image" style="width: 100%; height: auto;" />`,
+  template: ` <img [src]="imagePath" alt="Olajumoke Image" style="width: 100%; height: auto;" />`,
   styles: [``],
 })
 export class Gallery {
