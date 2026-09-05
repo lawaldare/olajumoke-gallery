@@ -3,7 +3,7 @@
 </div>
 
 <ng-template #cellTemplate let-item>
-  @let olajumokeItem = olajumokePictures[item.gridIndex % olajumokePictures.length];
+  @let olajumokeItem = images()[item.gridIndex % images().length];
   <div class="cell" (click)="onCellClick(item, olajumokeItem)">
     <img [src]="'assets/olajumoke/' + olajumokeItem" alt="" />
   </div>
